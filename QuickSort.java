@@ -24,8 +24,8 @@ public class QuickSort {
   static int particao(int[] vetor, int inicio, int fim) {
     int meio = (int) (inicio + fim) / 2;
     int pivot = vetor[meio];
-    inti = inicio - 1;
-    intj = fim + 1;
+    int i = inicio - 1;
+    int j = fim + 1;
     while (true) {
       do {
         i++;
