@@ -12,22 +12,16 @@ package terceiraUnidade;
 
 public class InsertSort {
 
-	public static void insertSort(int[] v) {
-		int j;
-		int key;
-		int i;
-		// A estrutura de repetição irá percorrer todo o vetor começando do segundo
-		// elemento
-
-		for (j = 1; j < v.length; j++) {
-			key = v[j]; // atribuindo o valor a uma variável que chamamos key.
-			// O segundo laço itera sobre os valores que estão antes da variável key.
-			// A iteração continuará até que o valor de i seja maior ou igual a zero
-			// e o valor do vetor na posição i seja maior que o valor de key.
-			for (i = j - 1; (i >= 0) && (v[i] > key); i--) { // Ao acessar o segundo laço for é feita uma atribuição.
-				v[i + 1] = v[i]; // Temos então que vetor[0+1] = vetor[0]
+	public static void insertSort(int[] vetor) {
+		int aux, j;
+		for (int i = 1; i < vetor.length; i++) {
+			aux = vetor[i];
+			j = i - 1;
+			while (j >= 0 && vetor[j] > aux) {
+				vetor[j + 1] = vetor[j];
+				j--;
 			}
-			v[i + 1] = key; // Prossegue até que todos os valores do vetor
-		} // sejam percorridos e estejam ordenados
+			vetor[j + 1] = aux;
+		}
 	}
 }
