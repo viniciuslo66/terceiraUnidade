@@ -1,15 +1,5 @@
 package terceiraUnidade;
 
-/*
- * Implementando o InsertSort que ordena os valores da esquerda para a direita, 
- * deixando os elementos lidos (a esquerda) ordenados. 
- * Complexidade Pior Caso: O(n²) - quando todos os elementos estão desordenados.
- * Complexidade Caso Médio: O(n²)
- * Complexidade Melhor Caso: O(n) - quando todos os elementos já estão ordenados.
- * Geralmente utilizado para ordenar um pequeno número de valores
- * Giovanni Guimarães
- * */
-
 public class InsertSort {
 
 	public static void insertSort(int[] vetor) {

@@ -11,7 +11,6 @@ public class SelectSort {
 					posicao_menor = j;
 				}
 			}
-
 			int aux = vetor[posicao_menor];
 			vetor[posicao_menor] = vetor[i];
 			vetor[i] = aux;
